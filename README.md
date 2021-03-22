@@ -7,5 +7,6 @@ In webservice,
 
 1) cd src/main/java/com/example
 2) javac calc/*.java
-3) java calc.CalculadoraServerPublisher
-4) test in java calc.CalculadoraServerPublisher
+3) in diretory (...\webservice\src\main\java): java com.example.calc.CalculadoraServerPublisher
+4) in webbrowser: http://127.0.0.1:9876/calc?wsdl
+
