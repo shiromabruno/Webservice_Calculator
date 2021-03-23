@@ -12,9 +12,9 @@ public class CalculadoraClient {
 		URL url = new URL("http://127.0.0.1:9876/shiromacalc?wsdl");
 		
 		//namespace, localpart where 
-		//namespace name is an anyURI (endpoint resource)
+		//namespace name is an anyURI (endpoint resource) [reverted package name]
 		//local part is an NCName (name of the implemented server class + service)
-		QName qname = new QName("http://shiromacalc/","CalculadoraServerImplService");
+		QName qname = new QName("http://calc.example.com/","CalculadoraServerImplService");
 		
 		//Creates a Service instance
 		Service ws = Service.create(url, qname);
